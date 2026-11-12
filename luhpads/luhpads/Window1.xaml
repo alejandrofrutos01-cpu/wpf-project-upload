@@ -1,0 +1,49 @@
+﻿<Window x:Class="luhpads.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:UserControls="clr-namespace:luhpads.View.UserControls"
+        xmlns:local="clr-namespace:luhpads"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <Grid Background="#5AB8B8B8">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            </Grid.RowDefinitions>
+        <Grid Grid.Row="0">
+            <UserControls:Header></UserControls:Header>
+        </Grid>
+        <Grid Grid.Row="2">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+                <RowDefinition Height="40*"></RowDefinition>
+                <RowDefinition Height="10*"></RowDefinition>
+            </Grid.RowDefinitions>
+                
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Image Source="/img/zero soft no bg.png" Grid.Row="0" Grid.Column="0"></Image>
+            <Image Source="/img/fx 99 no bg.png" Grid.Row="0" Grid.Column="1"></Image>
+            <Image Source="/img/hien no bg.png" Grid.Row="0" Grid.Column="2"></Image>
+            <Image Source="/img/sp h 005B no bg.png" Grid.Row="2" Grid.Column="0"></Image>
+            <Image Source="/img/sp h 005BE no bg.png" Grid.Row="2" Grid.Column="1"></Image>
+            <Image Source="/img/sp h 005W no bg.png" Grid.Row="2" Grid.Column="2"></Image>
+
+            <TextBlock Text="FX Zero Soft" Grid.Row="1" Grid.Column="0" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Courier New"></TextBlock>
+            <TextBlock Text="FX Type 99" Grid.Row="1" Grid.Column="1" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Courier New"></TextBlock>
+            <TextBlock Text="FX Hien Sharp" Grid.Row="1" Grid.Column="2" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Courier New"></TextBlock>
+            <TextBlock Text="SP 005B" Grid.Row="3" Grid.Column="0" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Courier New"></TextBlock>
+            <TextBlock Text="SP 005 Berserk" Grid.Row="3" Grid.Column="1" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Courier New"></TextBlock>
+            <TextBlock Text="SP 005W" Grid.Row="3" Grid.Column="2" FontSize="32" VerticalAlignment="Center" HorizontalAlignment="Center" FontFamily="Courier New"></TextBlock>
+        </Grid>
+        </Grid>
+</Window>

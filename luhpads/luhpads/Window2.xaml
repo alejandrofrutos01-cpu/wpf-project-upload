@@ -1,0 +1,30 @@
+﻿<Window x:Class="luhpads.Window2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:luhpads"
+        xmlns:UserControls="clr-namespace:luhpads.View.UserControls"
+        mc:Ignorable="d"
+        Title="Window2" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70"></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition Height="10"></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <UserControls:Header></UserControls:Header>
+        <Grid Grid.Row="1">
+            <TextBlock x:Name="PlaceHold" Text="Usuario" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="200" Height="40" FontWeight="Light" Foreground="LightGray" FontSize="16" Margin="-10" FontFamily="Courier New"></TextBlock>
+            <TextBox x:Name="Usuario" VerticalAlignment="Bottom" HorizontalAlignment="Center" Width="200" Height="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Background="Transparent" TextChanged="Usuario_TextChanged" FontSize="16" FontFamily="Courier New"></TextBox>
+            
+        </Grid>
+        <Grid Grid.Row="3">
+            <TextBlock x:Name="Placehold2" Text="Contraseña" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="40" FontWeight="Light" Foreground="LightGray" FontSize="16" Margin="10" FontFamily="Courier New"></TextBlock>
+            <PasswordBox x:Name="Contraseña" VerticalAlignment="Top" HorizontalAlignment="Center" Width="200" Height="40" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Background="Transparent" PasswordChanged="Contraseña_PasswordChanged" FontSize="16" FontFamily="Courier New"></PasswordBox>
+                <Button x:Name="LoginButton" Content="Iniciar Sesión" Width="200" Height="40" FontSize="16" FontFamily="Courier New" Click="LoginButton_Click"></Button>
+        </Grid>
+    </Grid>
+</Window>

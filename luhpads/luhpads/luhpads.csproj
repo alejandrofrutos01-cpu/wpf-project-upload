@@ -1,0 +1,52 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="img\derecha.png" />
+    <None Remove="img\fx 99 no bg.png" />
+    <None Remove="img\gif.gif" />
+    <None Remove="img\hien no bg.png" />
+    <None Remove="img\izquierda.png" />
+    <None Remove="img\logo.jpg" />
+    <None Remove="img\sp berserk no bg.png" />
+    <None Remove="img\sp gris no bg.png" />
+    <None Remove="img\sp h 005B no bg.png" />
+    <None Remove="img\sp h 005BE no bg.png" />
+    <None Remove="img\sp h 005W no bg.png" />
+    <None Remove="img\sp negra no bg.png" />
+    <None Remove="img\usuario.png" />
+    <None Remove="img\zero soft no bg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\sp h 005W no bg.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="WpfAnimatedGif" Version="2.0.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="img\derecha.png" />
+    <Resource Include="img\fx 99 no bg.png" />
+    <Resource Include="img\gif.gif" />
+    <Resource Include="img\hien no bg.png" />
+    <Resource Include="img\izquierda.png" />
+    <Resource Include="img\logo.jpg" />
+    <Resource Include="img\sp berserk no bg.png" />
+    <Resource Include="img\sp gris no bg.png" />
+    <Resource Include="img\sp h 005B no bg.png" />
+    <Resource Include="img\sp h 005BE no bg.png" />
+    <Resource Include="img\sp negra no bg.png" />
+    <Resource Include="img\usuario.png" />
+    <Resource Include="img\zero soft no bg.png" />
+  </ItemGroup>
+
+</Project>
